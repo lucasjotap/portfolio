@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,200&display=swap");
+
 :root {
   --primary-color: #10769e;
 }
@@ -13,22 +14,27 @@ body {
   background: white;
   padding: 1em;
 }
+
 .navbar .logo {
   text-decoration: none;
   font-weight: bold;
   color: black;
   font-size: 1.2em;
 }
+
 .navbar .logo span {
   color: var(--primary-color);
 }
+
 .navbar nav {
   display: none;
 }
+
 .navbar .container {
   display: flex;
   place-content: space-between;
 }
+
 .navbar .mobile-menu {
   cursor: pointer;
 }
@@ -57,11 +63,13 @@ section {
   color: rgb(68, 68, 68);
   letter-spacing: 0.3em;
 }
+
 .left-col h1 {
   font-size: 2.5em;
   line-height: 1.3em;
   margin-top: 0.2 em;
 }
+
 .left-col .primary-cta {
   background: var(--primary-color);
   color: rgb(255, 255, 255);
@@ -72,10 +80,12 @@ section {
   font-weight: bold;
   display: inline-block;
 }
+
 .left-col .watch-video-cta {
   display: block;
   margin-top: 1em;
 }
+
 .left-col .watch-video-cta img {
   margin-right: 0.5em;
 }
@@ -86,8 +96,8 @@ section {
 }
 
 section.features-section {
-  background: #031227;
-  color: white;
+  background: #011131;
+  color: rgb(255, 255, 255);
 }
 
 ul.features-list {
@@ -96,12 +106,14 @@ ul.features-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
+
 ul.features-list li {
   font-size: 1.1em;
   margin-bottom: 1em;
   margin-left: 2em;
   position: relative;
 }
+
 ul.features-list li:before {
   content: "";
   left: -2em;
@@ -119,16 +131,18 @@ ul.features-list li:before {
 
 .testimonial-section {
   background: var(--primary-color);
-  color: white;
+  color: rgb(255, 255, 255);
 }
+
 .testimonial-section li {
-  background: #00013f;
+  background: #777780;
   text-align: center;
   padding: 2em 1em;
   width: 80%;
   margin: 0 auto 5em auto;
   border-radius: 1em;
 }
+
 .testimonial-section li img {
   width: 5em;
   height: 5em;
@@ -147,7 +161,8 @@ label {
   margin-bottom: 0.5em;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 0.8em;
   margin-bottom: 1em;
@@ -188,9 +203,11 @@ nav {
   height: 100vh;
   padding: 1em;
 }
+
 nav ul.primary-nav {
   margin-top: 5em;
 }
+
 nav li a {
   color: white;
   text-decoration: none;
@@ -199,6 +216,7 @@ nav li a {
   font-size: 1.3em;
   text-align: right;
 }
+
 nav li a:hover {
   font-weight: bold;
 }
@@ -210,14 +228,18 @@ nav li a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  .mobile-menu, .mobile-menu-exit {
+
+  .mobile-menu,
+  .mobile-menu-exit {
     display: none;
   }
+
   .navbar .container {
     display: grid;
     grid-template-columns: 180px auto;
     justify-content: unset;
   }
+
   .navbar nav {
     display: flex;
     justify-content: space-between;
@@ -227,20 +249,25 @@ nav li a:hover {
     width: 100%;
     padding: 0;
   }
+
   .navbar nav ul {
     display: flex;
   }
+
   .navbar nav a {
     color: black;
     font-size: 1em;
     padding: 1em 1em;
   }
+
   .navbar nav ul.primary-nav {
     margin: 0;
   }
+
   .navbar nav li.current-a {
     font-weight: bold;
   }
+
   .navbar nav li.go-premium-cta a {
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
@@ -248,51 +275,64 @@ nav li a:hover {
     border-radius: 5em;
     margin-top: -0.2em;
   }
+
   .navbar nav li.go-premium-cta a:hover {
     background: var(var(--primary-color));
     color: white;
   }
 }
+
 @media only screen and (min-width: 1080px) {
   .container {
     width: 1080px;
     margin: 0 auto;
   }
+
   section {
     padding: 10em 4em;
   }
+
   .hero .container {
     display: flex;
     justify-content: space-between;
     text-align: left;
   }
+
   .hero .container .left-col {
     margin: 2em 2em 0 5em;
   }
+
   .hero .container .left-col h1 {
     font-size: 3em;
     width: 90%;
   }
+
   .hero-img {
     width: 30%;
     margin-right: 8em;
   }
+
   .hero-cta {
     display: flex;
   }
+
   .primary-cta {
     margin-right: 1em;
   }
+
   ul.features-list {
     font-size: 1.4em;
   }
+
   ul.features-list:before {
     width: 30px;
     height: 30px;
   }
+
   .features-section {
     position: relative;
   }
+
   .features-section img {
     display: block;
     position: absolute;
@@ -300,10 +340,14 @@ nav li a:hover {
     width: 200px;
     bottom: -2em;
   }
+
   .testimonial-section ul {
     display: flex;
   }
+
   .testimonial-section ul li {
     margin: 0 1em;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
